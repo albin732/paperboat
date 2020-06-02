@@ -1,0 +1,757 @@
+
+@font-face {
+    src: url(fonts/Baloo2-Regular.ttf)format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-family: baloo;
+  }
+@font-face {
+    font-family: baloo-med;
+    src: url(fonts/Baloo2-Medium.ttf)format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Baloo2-Regular.ttf)format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: merienda;
+      src: url(fonts/Merienda-Regular.ttf)format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    min-width: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+ 
+}
+
+.carousel-caption{
+    bottom: 220px !important;
+    z-index: 10;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: merienda;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: poppins;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+@media (max-width: 1366px){
+
+    .carousel-caption{
+        bottom: 40% !important;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        /* margin-top: 15px; */
+        font-family: merienda;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 20px;
+        line-height: 1;
+        font-family: poppins;
+    }
+}
+@media (max-width: 700px){
+
+    .carousel-caption{
+        bottom: 40% !important;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        margin-top: 15px;
+        font-family: merienda;
+
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 13px;
+        line-height: 1;
+        font-family: poppins;
+    }
+}
+@media (max-width: 415px){
+
+    .carousel-caption{
+        bottom: 40% !important;
+    }
+    .carousel-caption h5{
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: .2px;
+        margin-top: 15px;
+        font-family: merienda;
+
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 13px;
+        line-height: 1;
+        font-family: poppins;
+    }
+}
+
+
+
+
+
+  .carousel-inner > .item > img {
+    min-width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+ /* common */
+ .content-body{
+    position: relative;
+    /* background: #5C97FF; */
+    overflow: hidden;
+ }
+.content-body::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url(image/img/white_tea_table.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.footer{
+    background-image: linear-gradient(to top, rgba(73, 67, 59, 0.336), rgba(63, 56, 46, 0.377));
+}
+
+
+.navbar{
+    /* background-color: rgba(22, 20, 20, 0.603); */
+    /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(92, 89, 89, 0.7)); */
+    background-image: linear-gradient(to top, rgba(44, 34, 23, 0.068), rgba(46, 35, 22, 0.281));
+}
+
+.navbar-nav > li  > .dropdown-menu {
+    background-color: #69899f;
+    /* max-height: 400px;
+    overflow-y: auto; */
+    color: #fff;
+   
+  }
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: rgba(0,0,0,.5); 
+}
+.scrollable-menu{
+    height: auto;
+    max-height: 310px;
+    overflow-x: hidden;
+}
+.dropdown-item{
+    color: #fff !important;
+}
+.dropdown-item:hover{
+
+    background-color: rgba(22, 20, 20, 0.603) !important;
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-collapse{                       /*dropdown background*/
+        background: rgba(0,0,0,.5);
+    }
+
+    .navbar-nav ml-auto{                    /*Toggle*/
+        background: rgba(0,0,0,0.5);
+    }
+    .navbar-toggler{
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 414px){
+/* .card{
+    height: 37rem !important;
+} */
+
+}
+
+
+
+
+
+
+
+.navbar-nav a{
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    color: #fff !important;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:hover {
+    color: #f28a0b !important;
+    -webkit-animation: bounceIn 1s;
+    animation: bounceIn 1s;
+}
+
+.navbar-light .navbar-nav.active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav.show > .nav-link {
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(235, 180, 60) !important;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus{
+    color: #fff;
+}
+
+
+.headings{
+    padding-top: 1em;
+text-align: center;
+}
+
+
+.card {
+    margin: 0 auto; 
+    /* float: none; */
+    /* margin-bottom: 10px; */
+}
+.special-card{
+    height: 95% !important;
+    box-shadow: 2px 2px rgba(179, 179, 179, 0.603);
+}
+.card > a > span{
+    font-size: 20px;
+}
+.card-body{
+    font-family: poppins;
+    text-transform: uppercase;
+}
+.card-body > a:hover{
+    text-decoration: none;
+}
+.card-img-top{
+    width: 100%!important;
+    height: 200px!important;       /* want same size image */
+    object-fit: cover;
+ }
+.special .card{
+    height: 27em;
+    margin-bottom: 1em;
+}
+.card-price > label{
+    font-size: 35px;
+    color:#e4750d6b
+}
+.veg-mark{
+    padding: .3rem !important;
+  width: 10px !important;
+  height: 10px !important;
+  text-align: center !important;
+  /* margin: 83%;
+  margin-top: 62%; */
+}
+.veg-mark > img{
+    padding:0 0 0 0;
+    height: 25px;
+    width: 25px;
+}
+.calories-outer{
+    margin: 11rem 0 0 0.4rem;
+    padding: 0 !important;
+    height: 0;
+    width: 0;
+}
+.calories{
+    color: white;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 17px;
+    /* padding-top: 9rem; */
+}
+.calories:hover{
+    color:#c26106
+}
+/* 
+@media (max-width: 1025px){
+
+    .veg-mark{
+            margin: 75%;
+            margin-top: 75%;
+        }
+}
+@media (max-width: 800px){
+
+    .veg-mark{
+            margin: 70%;
+            margin-top: 105%;
+        }
+} */
+@media (max-width: 415px){
+
+.card-img-top{
+    height: 150px!important;       /* want same size image */
+ }
+ .card-outer .card{
+     height: 85% !important;
+ }
+.card > a > span{
+    font-size: 15px;
+}
+.card-body >a> h5{
+    font-size: 15px !important;
+}
+/* .veg-mark{
+        margin: 75%;
+        margin-top: 62%;
+    } */
+.calories-outer{
+    margin: 8rem 0 0 0.4rem;
+}
+
+}
+/* @media (max-width: 377px){
+
+    .veg-mark{
+            margin: 70%;
+            margin-top: 70%;
+        }
+}
+@media (max-width: 361px){
+
+    .veg-mark{
+            margin: 70%;
+            margin-top: 75%;
+        }
+}
+@media (max-width: 321px){
+
+    .veg-mark{
+            margin: 70%;
+            margin-top: 85%;
+        }
+} */
+
+
+
+
+
+
+.underline-subHead{
+    width: 25px;
+    height: 1px;
+    background-color: #c67605;
+    border: none;
+}
+.history-text{
+    /* height: 320vh; */
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.vertical-line { 
+    border-left: 1px solid #69899f; 
+    height: 120%; 
+    position:absolute; 
+    left: 50%; 
+} 
+
+.order-button{
+    size: 20em !important;
+    color: #df8c17 !important;
+    font-size: 19px !important;
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    border: 2px solid rgb(255, 231, 203);    
+}
+.order-button:hover{
+    background-color: #f59f26;
+    color: white !important;
+}
+
+
+
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
+
+.more-menu{
+    text-align: center;
+    padding: 2rem 0;
+}
+.btn-more-menu{
+    background-color: #f28a0b;
+    color: #faecbe;
+    border-color:2px solid#c67605;
+    box-shadow: none;
+    width: 45%;
+    height: 2.5rem;
+    font-family: poppins;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn-more-menu:hover{
+    background-color: #f59f26;
+}
+  
+/* 
+.ftco-section {
+  padding: 6em 0;
+  position: relative; }
+
+.testimony-section {
+position: relative;
+z-index: 0;
+background-position: center center !important;
+position: relative;
+background-attachment: fixed; }
+.testimony-section .img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ''; }
+.testimony-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000000;
+    opacity: .7; }
+
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden; } */
+
+
+
+
+
+.section-testimonial{
+    background-image: url(image/img/green_veg.jpg);
+    background-size: cover;
+    opacity: .9;
+
+}
+.testimonial{
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+    margin-top: 150px;
+    padding-bottom: 20%;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-top: 40px solid white;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #f28a0b;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.testimonial .description{
+    font-size: 16px;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: -1px;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic{
+display: inline-block;
+border: 4px solid white;
+border-radius: 50%;
+box-shadow: 0 0 2px 2px #fd9605;
+overflow: hidden;
+z-index: 1;
+position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #fd9605;
+}
+.pic img{   
+    width: 100px !important;
+    height: 50px;
+}
+.owl-theme .owl-controls{
+    margin-top: 60px;
+}
+
+
+
+  /* Menu  Page*/
+
+  #menu .card-body > a > h2{
+    font-size: 17px !important;
+}
+  .menu-card-img{
+    width: 100%!important;
+    height: 160px!important;       /* want same size image */
+    object-fit: cover;
+ }
+ .menu-calories-outer{
+     margin: 8.4rem 0 0 0.4rem;
+     padding: 0 !important;
+     height: 0;
+     width: 0;
+ }
+
+
+.menu-order-button{
+    size: 20em !important;
+    color: #df8c17 !important;
+    font-size: 19px !important;
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgb(250, 200, 136);    
+    margin: 1px 1px 0 1px;
+}
+.menu-order-button:hover{
+    background-color: #f59f26;
+    color: white !important;
+}
+
+
+
+/* single_product Page  */
+
+.product-card-img{
+    width: 100%!important;
+    height: 500px!important;       /* want same size image */
+    object-fit: cover;
+ }
+ .product .card-body > h5{
+     font-size: 24px;
+ }
+ .product .card-body > p{
+     font-size: 17px;
+     font-style: italic;
+     text-transform: none;
+    }
+
+ .product-order-button{
+    size: 20em !important;
+    color: #df8c17 !important;
+    font-size: 23px !important;
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    border: 2px solid rgb(250, 200, 136);    
+    margin: 1px 1px 0 1px;
+}
+
+.product-order-button:hover{
+    background-color: #f59f26;
+    color: white !important;
+}
+
+.product-calories-outer{
+    margin: 27rem 0 0 0.4rem;
+    padding: 0 !important;
+    height: 0;
+    width: 0;
+}
+.product-calories{
+    font-size: 18px;
+}
+
+
+
+
+/* 
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5; }
+    .close:hover {
+      color: #000;
+      text-decoration: none; }
+    .close:not(:disabled):not(.disabled) {
+      cursor: pointer; }
+      .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+        opacity: .75; }
+  
+  button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  
+  a.close.disabled {
+    pointer-events: none; } */
+
+
+
+
+        /* Cart Page  */
+.head-top{
+    height: 20rem;
+}
+.Sub-Head-section{
+    color: #c67605;
+    background-image: url('image/img/green_veg_flip_half.jpg');
+    height: 15rem;
+    opacity: .9;
+}
+
+.input-qty{
+    margin-top: 1.5rem;
+    margin-right: .1rem;
+    width: 6rem;
+}
+
+/* image overlay zoom  */
+        /* [1] The container */
+        .img-hover-zoom {
+            height: 185px; /* [1.1] Set it as per your need */
+            overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+        }
+        
+        /* [2] Transition property for smooth transformation of images */
+        .img-hover-zoom img {
+            transition: transform .5s ease;
+        }
+        
+        /* [3] Finally, transforming the image when container gets hovered */
+        .img-hover-zoom:hover img {
+            transform: scale(1.5);
+        }
+.price-span{
+    font-family: poppins;
+}
+
+
+
+
+/* menu  */
+
+.side-pannel{
+    height: 38rem;
+}
